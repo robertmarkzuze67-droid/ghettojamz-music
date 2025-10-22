@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <!--head section-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="discription" content=" ghettojamz.com music Library">
+    <meta name="keywords" content="ghettojamz music, ghettojamz music library, ghettojamz music download">
+    <title>GhettoJamz || Music Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+     <link rel="icon" href="artworks/logo-art.png" type="image/x-icon">
+    <link rel="shortcut icon" href="artworks/logo-art.png" type="image/x-icon">
+    <script>
+        const searchMusicItem = () =>{
+    const searchbox = document.getElementById("search-music").value.toUpperCase();
+    const product = document.querySelectorAll(".music-rltd")
+    const pname = document.getElementsByClassName("music-rltd-link")
+
+    for(var i=0; i < pname.length; i++){
+        let match = product[i].getElementsByClassName('music-rltd-link')[0];
+
+        if(match){
+            let textvalue = match.textContent || match.innerHTML
+
+            if(textvalue.toLocaleUpperCase().indexOf(searchbox) > -1){
+                product[i].style.display = "";
+            }else{
+                product[i].style.display = "none";
+            }
+        }
+    }
+    
+}
+    </script>
+
+    
+</head>
+
+
+<!--the body structure of the web-->
+<body>
+
+
+    <header>
+        <span><img src="artworks/logo-art.png" alt=""></span>
+    </header>
+
+   <!--second div for navigation bar and search bar-->
+   <div class="menu-bar">
+       
+    <button class="menu-btn" onclick="openSideMenu()"><img src="images/menu-burger.png" alt="menu btn icon"></button>
+   
+    <span class="logo"><img src="images/px-logo-ya-black.png" alt="main logo"></span>
+           <!--desktop mode menu-->
+
+    <ul class="linemenu">
+        
+        <li><img src="images/home_icon.png" alt=""><a href="index">Home</a></li>
+         <li><img src="images/trending-black.png" alt=""><a href="trending">Trending</a></li>
+        <li><img src="images/artists.png" alt=""><a href="artists">Artists</a></li>
+        <li><img src="images/videos_icon.png" alt=""><a href="videos">Videos</a></li>
+        <li><img src="images/albums.png" alt=""><a href="albums">Albums</a></li>
+        <li><img src="images/send.png" alt=""><a href="contact-us">Contact Us</a></li>
+        
+        
+
+    </ul>
+
+    
+
+
+            <!--small screen mode menu-->
+    <ul class="sidemenu">
+        <button class="close-btn" onclick="closeSideMenu()"><img src="images/close.png" alt=""></button>
+        
+        <li><img src="images/home_icon.png" alt=""><a href="index">Home</a></li>
+         <li><img src="images/trending-black.png" alt=""><a href="trending">Trending</a></li>
+        <li><img src="images/artists.png" alt=""><a href="artists">Artists</a></li>
+        <li><img src="images/videos_icon.png" alt=""><a href="videos">Videos</a></li>
+        <li><img src="images/albums.png" alt=""><a href="albums">Albums</a></li>
+        <li><img src="images/send.png" alt=""><a href="contact-us">Contact Us</a></li>
+        
+        
+    </ul>
+
+    
+            
+   
+   </div>
+    
+
+
+
+
+   
+       
+    <!--music items-->
+    <div class="related-posts" style="margin-top: 60px;">
+
+
+        <!--the search bar-->
+
+        <form class="search-bar" method="" action=""> 
+        
+            <input type="search" onkeyup="searchMusicItem()" id="search-music" placeholder="Type to search music">
+             <button type="submit" class="src-btn" onclick="search()"><img src="images/search.png" alt=""></button>
+           
+            </form>
+
+
+        <h3><img src="images/music-icon.png" alt="">MUSIC LIBRARY</h3>
+       
+
+         
+
+    
+
+    <section class="related-posts-music">
+
+            <div class="music-rltd">
+         <span class="music-rltd-art"><a href="song/blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje"><img src="artworks/logo-art.png" alt="Ace Trap - Rich by 20 ft Emmie Debbo"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje"><b>Ndilibe nawe chufukwa ft Mellz</b><br>Blasic Muzik</a><br>
+                 <span class="genre-id">Local Jazz</span>|<span id="single_ep">Single</span>
+                  <a href="song/blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">October 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+
+        <div class="music-rltd">
+             <span class="music-rltd-art"><a href="song/ace-trap-rich-by-20-ft-emmie-deebo"><img src="artworks/Ace Trap - Rich by 20 ft Emmie Debbo.jpg" alt="Ace Trap - Rich by 20 ft Emmie Debbo"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/ace-trap-rich-by-20-ft-emmie-deebo"><b>Rich by 20 ft Emmie Deebo</b><br>Ace Trap</a><br>
+                 <span class="genre-id">Afro</span>|<span id="single_ep">Single</span>
+                  <a href="song/ace-trap-rich-by-20-ft-emmie-deebo" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">October 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/mommuja-manstern-ft-CIP"><img src="artworks/MOMUJA.png" alt="song/mommuja-manstern-ft-CIP"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/mommuja-manstern-ft-CIP"><b>Mommuja ft C.I.P</b><br>Man Stern</a><br>
+                 <span class="genre-id">Blues</span>|<span id="single_ep">Single</span>
+                  <a href="song/mommuja-manstern-ft-CIP" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/usa-manstern-ft-phill-don"><img src="artworks/USA. 2.png" alt="song/usa-manstern-ft-phill-don"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/usa-manstern-ft-phill-don"><b>Usa ft Phill Don</b><br>Man Stern</a><br>
+                 <span class="genre-id">Blues</span>|<span id="single_ep">Single</span>
+                  <a href="song/usa-manstern-ft-phill-don" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+         <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/kho-one-mane"><img src="artworks/logo-art.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/kho-one-mane"><b>Mane</b><br>Kho-One</a><br>
+                 <span class="genre-id">Amapiano</span>|<span id="single_ep">Single</span>
+                  <a href="song/kho-one-mane" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/f-tron-suntha-ft-andy-cee"><img src="artworks/sunta-andy-tron.jpg" alt="song/f-tron-suntha-ft-andy-cee"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/f-tron-suntha-ft-andy-cee"><b>Suntha ft Andy Cee</b><br>F-Tron</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Single</span>
+                  <a href="song/f-tron-suntha-ft-andy-cee" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+            <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/lady-aika-golide"><img src="artworks/golide-Lady_Aika.jpg" alt="song/lady-aika-golide"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/lady-aika-golide"><b>Golide</b><br>Lady Aika</a><br>
+                 <span class="genre-id">RnB</span>|<span id="single_ep">Single</span>
+                  <a href="song/lady-aika-golide" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+
+            <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/pilizi-k-banton-ft-ace-jizzy"><img src="artworks/pulizi-k  banton ft ace jizzy.jpeg" alt="song/pilizi-k-banton-ft-ace-jizzy"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/pilizi-k-banton-ft-ace-jizzy"><b>Pulizi ft Ace Jizzy</b><br>K Banton</a><br>
+                 <span class="genre-id">Hip-Hop</span>|<span id="single_ep">Single</span>
+                  <a href="song/pilizi-k-banton-ft-ace-jizzy" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+            <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/eve-iweyo-henry-czar"><img src="artworks/Henry-Czar-Eve.jpg" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/eve-iweyo-henry-czar"><b>Eve iweyo</b><br>Henry Czar</a><br>
+                 <span class="genre-id">Hip-Hop</span>|<span id="single_ep">Single</span>
+                  <a href="song/eve-iweyo-henry-czar" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">September 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+        
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/zina-zake-kenzy-mw-ft-jay-tway"><img src="artworks/zinazake kenzy ft jay tway.jpg" alt="song/zina-zake-kenzy-mw-ft-jay-tway"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/zina-zake-kenzy-mw-ft-jay-tway"><b>Zina zake ft Jay Tway</b><br>Kenzy Mw</a><br>
+                 <span class="genre-id">Hip-Hop</span>|<span id="single_ep">Single</span>
+                  <a href="song/zina-zake-kenzy-mw-ft-jay-tway" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/dzindoko-fresh-don-abebu"><img src="artworks/zindoko-fresh don.jpeg" alt="song/dzindoko-fresh-don-abebu"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/dzindoko-fresh-don-abebu"><b>Dzindoko</b><br>Fresh Don Abebu</a><br>
+                 <span class="genre-id">Afro-Pop</span>|<span id="single_ep">Single</span>
+                  <a href="song/dzindoko-fresh-don-abebu" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 
+             </span>
+            </div>
+
+
+ <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/luLu-khetchemu"><img src="artworks/khetchemu-lulu.jpg" alt="song/luLu-khetchemu"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/luLu-khetchemu"><b>Khetchemu</b><br>Lulu and Mathumela</a><br>
+                 <span class="genre-id">Afro-Local</span>|<span id="single_ep">Single</span>
+                  <a href="song/luLu-khetchemu" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/usamajombe-aidfest-madness"><img src="artworks/usamajombe-aidfest.jpg" alt="song/usamajombe-aidfest-madness"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/usamajombe-aidfest-madness"><b>Usamajombe</b><br>Aidfest Madness</a><br>
+                 <span class="genre-id">Amapiano</span>|<span id="single_ep">Single</span>
+                  <a href="song/usamajombe-aidfest-madness" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/mitambo-aba-m`bangali"><img src="artworks/mitambo-aba.jpg" alt="song/mitambo-aba-m`bangali"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/mitambo-aba-m`bangali"><b>Mitambo</b><br>Aba M`bangali</a><br>
+                 <span class="genre-id">Hip-Hop/Rap</span>|<span id="single_ep">Single</span>
+                  <a href="song/mitambo-aba-m`bangali" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+         <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/Lyvwa-Katundu"><img src="artworks/Katundu-Lyvwa.jpg" alt="song/Lyvwa-Katundu"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/Lyvwa-Katundu"><b>Katundu</b><br>Lyvwa</a><br>
+                 <span class="genre-id">Fusion</span>|<span id="single_ep">Single</span>
+                  <a href="song/Lyvwa-Katundu" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+            
+         <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/lakwira-rashley"><img src="artworks/lakwira-Rashley.jpg" alt="song/lakwira-rashley"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/lakwira-rashley"><b>Lakwira</b><br>Rashley</a><br>
+                 <span class="genre-id">RnB</span>|<span id="single_ep">Single</span>
+                  <a href="song/lakwira-rashley" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/Brainlock-T-kas-Kachasu-ft-crispy-Malawi"><img src="artworks/kachasu-T kas ft cripsy.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/Brainlock-T-kas-Kachasu-ft-crispy-Malawi"><b>Kachasu ft Crispy Malawi</b><br>Brainlock T Kas</a><br>
+                 <span class="genre-id">Hip-Hop</span>|<span id="single_ep">Single</span>
+                  <a href="song/Brainlock-T-kas-Kachasu-ft-crispy-Malawi" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+    
+             </span>
+            </div>
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/combien-Tay-Grin-x-Awilo-Longomba"><img src="artworks/combien-Tay grin.png" alt="song/combien-Tay-Grin-x-Awilo-Longomba"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/combien-Tay-Grin-x-Awilo-Longomba"><b>Combien ft Eddie Kadi</b><br>Tay Grin x Awilo Longoma</a><br>
+                 <span class="genre-id">Afro-Jazz</span>|<span id="single_ep">Single</span>
+                  <a href="song/combien-Tay-Grin-x-Awilo-Longomba" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+        
+
+
+        <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/safety-pop-young"><img src="artworks/safety- pop young.jpg" alt="song/safety-pop-young"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/safety-pop-young"><b>Safety</b><br>Pop Young</a><br>
+                 <span class="genre-id">Afro-Pop</span>|<span id="single_ep">Single</span>
+                  <a href="song/safety-pop-young" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+        
+
+         <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/lifulekitala-sife-mw-ft-keturah"><img src="artworks/Sife-Mw-Ft-Keturah---Rifulekital.jpeg" alt="song/lifulekitala-sife-mw-ft-keturah"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/lifulekitala-sife-mw-ft-keturah"><b>Lifulekitala</b><br>Sife Mw ft Keturah</a><br>
+                 <span class="genre-id">Afro-Pop</span>|<span id="single_ep">Single</span>
+                  <a href="song/lifulekitala-sife-mw-ft-keturah" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                 </div>
+             </span>
+            </div>
+
+
+         <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/achina-gattah-ase-ft-dirty-flow-mg1"><img src="12 08 25 music/Achina-Gattah-Ase-MG1-ft-Dirty-Flo.jpg" alt="song/achina-gattah-ase-ft-dirty-flow-mg1"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/achina-gattah-ase-ft-dirty-flow-mg1"><b>MG1</b><br>Achina Gatta Ase ft Dirt Flo</a><br>
+                 <span class="genre-id">Hip-Hop</span>|<span id="single_ep">Single</span>
+                  <a href="song/achina-gattah-ase-ft-dirty-flow-mg1" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+            
+              <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/malesa-blaze-ft-lord-gaga"><img src="artworks/Blaze-Feat-Lord-Malesa.jpeg" alt="song/malesa-blaze-ft-lord-gaga"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/malesa-blaze-ft-lord-gaga"><b>Malesa</b><br>Blaze ft Lord Gaga</a><br>
+                 <span class="genre-id">Hip-Hop</span>|<span id="single_ep">Single</span>
+                  <a href="song/malesa-blaze-ft-lord-gaga" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">August 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+
+            <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-ayi-bad-energy-f-Brainlock-TKas"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-ayi-bad-energy-f-Brainlock-TKas"><b>Ayi bad energy</b><br>6th MW ft Brainlock T Kas</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-ayi-bad-energy-f-Brainlock-TKas" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                    
+                 </div>
+             </span>
+            </div>
+     
+
+            <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-limodzi-ft-Malimba-Music"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-limodzi-ft-Malimba-Music"><b>Lomodzi</b><br>6th MW ft Malimba Music</a><br>
+                 <span class="genre-id">Afro</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-limodzi-ft-Malimba-Music" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+            
+            <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-munthu-ft-Malinga-Mafia"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-munthu-ft-Malinga-Mafia"><b>Munthu ndi Munthu</b><br>6th MW ft Malinga Mafia</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-munthu-ft-Malinga-Mafia" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                    
+                 </div>
+             </span>
+            </div>
+
+
+            
+            <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-mfana-wa-malawi"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-mfana-wa-malawi"><b>Mfana Wa Malawi</b><br>6th Mw</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-mfana-wa-malawi" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+            
+              <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-nzika"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-nzika"><b>Nzika</b><br>6th Mw</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-nzika" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+
+
+
+              <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-si-izizi"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-si-izizi"><b>Si Izizi</b><br>6th Mw</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-si-izizi" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+
+               <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-stamina"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-stamina"><b>Stamina</b><br>6th Mw</a><br>
+                 <span class="genre-id">afro-DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-stamina" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+
+
+            
+               <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-udindo"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-udindo"><b>Udindo</b><br>6th Mw</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-udindo" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+
+            
+               <div class="music-rltd">
+           
+             <span class="music-rltd-art"><a href="song/6th-uzimva-ft-A-Inno-Busy"><img src="artworks/Mfana wa malawi 6th.png" alt=""></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/6th-uzimva-ft-A-Inno-Busy"><b>Uzimva_ft_A_inno_busy</b><br>6th Mw</a><br>
+                 <span class="genre-id">DanceHall</span>|<span id="single_ep">Mfana wa Malawi Album</span>
+                 <a href="song/6th-uzimva-ft-A-Inno-Busy" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">July 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+
+
+
+
+         <div class="music-rltd">
+    
+             <span class="music-rltd-art"><a href="song/f-tron-money"><img src="artworks/F-Tron_Money (1).jpg" alt="song/f-tron-money"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/f-tron-money"><b>Money</b><br>F Tron</a><br>
+                 <span class="genre-id">Dancehall</span>|<span id="single_ep">Single</span>
+                  <a href="song/f-tron-money" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">2024</span>
+                    
+                 </div>
+             </span>
+            </div>
+
+
+       <div class="music-rltd">
+       
+        <span class="music-rltd-art"><a href="song/mantha-andy-cee"><img src="artworks/manthaArt-andycee.jpg" alt="song/mantha-andy-cee"></a></span>
+        <span class="music-rltd-link">
+            <a href="song/mantha-andy-cee"><b>Mantha</b><br>Andy Cee</a><br>
+            <span class="genre-id">Afro-Dancehall</span>|<span id="single_ep">Single</span>
+             <a href="song/mantha-andy-cee" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+            <div class="music-rltd-blw">
+
+                <span><img src="images/calendar.png" alt="">Sept 2024</span>
+            
+            </div>
+        </span>
+       </div>
+
+
+       
+       <div class="music-rltd">
+       
+         <span class="music-rltd-art"><a href="song/k-jasper-mamveramvera"><img src="artworks/manveranvera-kjasper.jpg" alt="song/k-jasper-mamveramvera"></a></span>
+         <span class="music-rltd-link">
+             <a href="song/k-jasper-mamveramvera"><b>Mamveramvera</b><br>K Jasper</a><br>
+             <span class="genre-id">Hip-Hop-Drill</span>|<span id="single_ep">Single</span>
+              <a href="song/k-jasper-mamveramvera" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+             <div class="music-rltd-blw">
+                 <span><img src="images/calendar.png" alt="">Dec 2024</span>
+                 
+             </div>
+         </span>
+        </div>
+
+
+
+        <div class="music-rltd">
+            
+             <span class="music-rltd-art"><a href="song/badmind-f-tron"><img src="artworks/Badmind_-_F_Trone_x_Chinp.jpg" alt="song/badmind-f-tron"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/badmind-f-tron"><b>Bad mind</b><br>F Tron ft Ching P</a><br>
+                 <span class="genre-id">Dancehall</span>|<span id="single_ep">Single</span>
+                  <a href="song/badmind-f-tron" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">June 2023</span>
+                    
+                 </div>
+             </span>
+            </div>
+
+
+
+
+            <div class="music-rltd">
+            
+             <span class="music-rltd-art"><a href="song/one-bottle-vasco-khamuna"><img src="artworks/one bottle-khamuna.jpg" alt="song/one-bottle-vasco-khamuna"></a></span>
+             <span class="music-rltd-link">
+                 <a href="song/one-bottle-vasco-khamuna"><b>One bottle</b><br>Vasco Khamuna</a><br>
+                 <span class="genre-id">Fusion</span>|<span id="single_ep">Single</span>
+                  <a href="song/one-bottle-vasco-khamuna" class="dl-btn-rltd"><img src="images/download-icon.png" alt=""></a>
+                 <div class="music-rltd-blw">
+                     <span><img src="images/calendar.png" alt="">Jan 2025</span>
+                     
+                 </div>
+             </span>
+            </div>
+     
+
+
+
+
+
+
+
+            
+
+    </section>
+
+
+
+
+   
+
+
+
+
+
+
+   </div>
+
+   <!--footer section for qiuck access-->
+<footer>
+    <a href="#" id="scroll-top"><img src="images/up-icon.png" alt="" class="scroll-top"></a>
+
+
+     
+    <a href="https://wa.me/message/E4RWLUFUOYDDF1" id="wap-link"><img src="images/WhatsApp_Icon.png" alt=""></a>
+
+     <p class="discr">ghettojamz music is one of the fastest growing music streaming platform. 
+        Upload and promote your music with us</p>
+
+        <div class="footer-ul">
+            <h1>qiuck links</h1>
+            <li><a href="index">Home</a></li>
+            <li><a href="contact-us">About</a></li>
+            <li><a href="contact-us">Contact</a></li>
+        
+        </div>
+
+    <span class="social-links">
+        <p class="in-tc">SOCIAL MEDIA</p>
+       
+    </span>
+    
+    <span class="links">
+        
+        <a href="https://www.instagram.com/ghettojamz.web?igsh=MW9vcGprOGJzaGh2dA=="><img src="images/instagram-white.png" alt="" ></a>
+        <a href="https://www.facebook.com/profile.php?id=61568438631481"><img src="images/Facebook-white.png" alt="" ></a>
+         <a href="https://www.youtube.com/channel/UCT_JbcJwvkLSqPtJqBRIqQw"><img src="images/videos.png" alt="" ></a>
+
+        </span>
+        
+        
+        <p id="main-footer">©GhettoJamz2025. All Rights Reserved</p>
+        <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21379678&style=0024&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
+                                  
+
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21434889&style=0021&nbdigits=5&type=ip&initCount=0" title="Online Counter, PDF tools" Alt="Free PDF Tools, Counters"   border="0" /></a>                                    
+                                    
+                                        
+                                        
+                                          
+                            
+    
+</footer>
+</body>
+</html>

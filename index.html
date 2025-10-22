@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/webfonts/fa-brands-400.ttf">
+    <!--head section-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content=" ghettojamz.com music download">
+    <meta name="keywords" content="ghettojamz music, ghettojamz.com, ghettojamz music download">
+    <title>GhettoJamz | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="artworks/logo-art.png" type="image/x-icon">
+    <link rel="shortcut icon" href="artworks/logo-art.png" type="image/x-icon">
+
+    <meta name="google-site-verification" content="OK1C-3StmQ2aktMMcRNcEpoe7m7hJJE_01TIttBdN0w" />
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMHT5YVDW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMHT5YVDW9');
+</script>
+    
+</head>
+
+
+<!--the body structure of the web-->
+<body>
+
+         <header>
+        <span><img src="artworks/logo-art.png" alt="search results image"></span>
+    </header>
+
+
+   <!--second div for navigation bar and search bar-->
+   <div class="menu-bar">
+       
+    <button class="menu-btn" onclick="openSideMenu()"><img src="images/menu-burger.png" alt=""></button>
+    <button class="profile-btn" onclick="openLogInForm()"><i class="fa-solid fa-circle-user"></i></button>
+    <span class="logo"><img src="images/px-logo-ya-black.png"></span>
+           <!--desktop mode menu-->
+
+    <ul class="linemenu">
+        
+        <li><img src="images/trending-black.png" alt="trending btn icon"><a href="trending">Trending</a></li>
+        <li><img src="images/artists.png" alt="artists btn icon"><a href="artists">Artists</a></li>
+         <li><img src="images/music-icon.png" alt="music library btn icon"><a href="music-library">Music</a></li>
+        <li><img src="images/videos_icon.png" alt="video btn icon"><a href="videos">Videos</a></li>
+        <li><img src="images/albums.png" alt="albums btn icon"><a href="albums">Albums</a></li>
+        <li><img src="images/send.png" alt="contact-us btn icon"><a href="contact-us">Contact Us</a></li>
+
+
+    </ul>
+
+
+
+
+    
+
+    <a href="contact-us.html" class="upload-btn2"><i class="fa-solid fa-upload"></i></a>
+
+
+            <!--small screen mode menu-->
+    <ul class="sidemenu">
+        <button class="close-btn" onclick="closeSideMenu()"><img src="images/close.png" alt=""></button>
+        
+        <li><img src="images/trending-black.png" alt="trending btn icon"><a href="trending">Trending</a></li>
+        <li><img src="images/artists.png" alt="artists btn icon"><a href="artists">Artists</a></li>
+         <li><img src="images/music-icon.png" alt="music library btn icon"><a href="music-library">Music</a></li>
+        <li><img src="images/videos_icon.png" alt="video btn icon"><a href="videos">Videos</a></li>
+        <li><img src="images/albums.png" alt="albums btn icon"><a href="albums">Albums</a></li>
+        <li><img src="images/send.png" alt="contact-us btn icon"><a href="contact-us">Contact Us</a></li>
+        
+        
+    </ul>
+
+    
+   
+   </div>
+
+
+
+
+
+
+   
+
+
+<!--large part containing music items-->
+   <section class="main-content" id="main-content">
+
+
+    <!--the search bar-->
+    <form class="search-bar" method="" action=""> 
+        
+        <input type="search" value="" onkeyup="searchMusic()" id="search-music" placeholder="Type here to search music">
+
+         <button type="submit" class="src-btn" ><img src="images/search.png" alt=""></button>
+       
+        </form>
+
+       <h3><img src="images/calendar.png" alt="icon"> JUST NEW SONGS</h3>
+
+    
+
+    
+
+
+        
+ <!--music list on home page-->
+        <div id="music-list">
+
+
+             <div class="musicitem">
+
+        <a href="song/blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje" class="artwork-div"> <img src="artworks/logo-art.png" class="artwork" alt="blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje">
+            <span class="genre-pic">Local Jazz</span><span id="dl-on"><img src="images/download-icon.png" alt="dl btn icon"></span></a>
+          <div>
+          <a href="song/blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje" class="music-link" >Ndilibe nawe chifukwa ft Mellz Kumpanje</a>
+          <a href="song/blasic-muzik-ndlibe-nawe-chifukwa-ft-Mellz-Kumpanje" class="h2">Blasic Muzik</a> 
+          </div>
+        
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">October 2025</span>
+        </container> 
+    </div>
+
+
+            <div class="musicitem">
+
+        <a href="song/ace-trap-rich-by-20-ft-emmie-deebo" class="artwork-div"> <img src="artworks/Ace Trap - Rich by 20 ft Emmie Debbo.jpg" class="artwork" alt="Ace Trap - Rich by 20 ft Emmie Debbo">
+            <span class="genre-pic">Afro</span><span id="dl-on"><img src="images/download-icon.png" alt="dl btn icon"></span></a>
+          <div>
+          <a href="song/ace-trap-rich-by-20-ft-emmie-deebo" class="music-link" >Rich by 20 ft Emmie Deebo</a>
+          <a href="song/f-tron-suntha-ft-andy-cee" class="h2">Ace Trap</a> 
+          </div>
+        
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">October 2025</span>
+        </container> 
+    </div>
+
+
+            <div class="musicitem">
+
+        <a href="song/mommuja-manstern-ft-CIP" class="artwork-div"> <img src="artworks/MOMUJA.png" class="artwork" alt="mommuja-manstern-ft-CIP artwork">
+            <span class="genre-pic">Blues</span><span id="dl-on"><img src="images/download-icon.png" alt="dl btn icon"></span></a>
+<div>
+          <a href="song/mommuja-manstern-ft-CIP" class="music-link" >Mommuja - ManStern ft C.I.P</a>
+          </div>
+        
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+
+            <div class="musicitem">
+
+        <a href="song/usa-manstern-ft-phill-don" class="artwork-div"> <img src="artworks/USA. 2.png" class="artwork" alt="usa-manstern-ft-phill-don artwork">
+            <span class="genre-pic">Blues</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+    <div>
+          <a href="song/usa-manstern-ft-phill-don" class="music-link" >Usa - ManStern ft Phill Don</a>
+          </div>
+        
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+             
+
+            <div class="musicitem">
+
+        <a href="song/kho-one-mane" class="artwork-div"> <img src="artworks/logo-art.png" class="artwork" alt="kho-one-mane artwork">
+            <span class="genre-pic">Amapiano</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+<div>
+          <a href="song/kho-one-mane" class="music-link" >Mane - Kho One</a>
+          </div>
+          
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+
+            <div class="musicitem">
+
+        <a href="song/f-tron-suntha-ft-andy-cee" class="artwork-div"> <img src="artworks/sunta-andy-tron.jpg" class="artwork" alt="f-tron-suntha-ft-andy-cee artwork">
+            <span class="genre-pic">DanceHall</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/f-tron-suntha-ft-andy-cee" class="music-link" >Suntha ft Andy Cee</a>
+          <a href="song/f-tron-suntha-ft-andy-cee" class="h2">F-Tron</a> 
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+
+    <div class="musicitem">
+
+        <a href="song/lady-aika-golide" class="artwork-div"> <img src="artworks/golide-Lady_Aika.jpg" class="artwork" alt="lady-aika-golide artwork">
+            <span class="genre-pic">RnB</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/lady-aika-golide" class="music-link" >Golide</a>
+          <a href="song/lady-aika-golide" class="h2">Lady Aika</a> 
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+    <div class="musicitem">
+
+        <a href="song/pilizi-k-banton-ft-ace-jizzy" class="artwork-div"> <img src="artworks/pulizi-k  banton ft ace jizzy.jpeg" class="artwork">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/pilizi-k-banton-ft-ace-jizzy" class="music-link" >Pilizi ft Ace Jizzy</a>
+          <a href="song/pilizi-k-banton-ft-ace-jizzy" class="h2">K Banton</a> 
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+
+    <div class="musicitem">
+
+        <a href="song/eve-iweyo-henry-czar" class="artwork-div"> <img src="artworks/Henry-Czar-Eve.jpg" class="artwork" alt="eve-iweyo-henry-czar artwork">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/eve-iweyo-henry-czar" class="music-link" >Eve iweyo</a>
+          <a href="song/eve-iweyo-henry-czar" class="h2">Henry Czar</a> 
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">September 2025</span>
+        </container> 
+    </div>
+
+
+
+             <div class="musicitem">
+
+        <a href="song/zina-zake-kenzy-mw-ft-jay-tway" class="artwork-div"> <img src="artworks/zinazake kenzy ft jay tway.jpg" class="artwork" alt="zina-zake-kenzy-mw-ft-jay-tway artwork">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/zina-zake-kenzy-mw-ft-jay-tway" class="music-link" >Zina zake ft Jay Tway</a>
+          <a href="song/zina-zake-kenzy-mw-ft-jay-tway" class="h2">Kenzy Mw</a> 
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+
+
+            <div class="musicitem">
+
+        <a href="song/dzindoko-fresh-don-abebu" class="artwork-div"> <img src="artworks/zindoko-fresh don.jpeg" class="artwork" alt="dzindoko-fresh-don-abebu artwork">
+            <span class="genre-pic">Afro-Pop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/dzindoko-fresh-don-abebu" class="music-link" >Dzindoko - Fresh Don Abebu</a>
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+             
+            <div class="musicitem">
+
+        <a href="khetchemu - LuLu" class="artwork-div"> <img src="artworks/khetchemu-lulu.jpg" class="artwork">
+            <span class="genre-pic">Afro-Local</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="khetchemu - LuLu" class="music-link" >Khetchemu</a>
+          <a href="khetchemu - LuLu" class="h2">Lulu and Mathumela</a> 
+        </div>
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+            
+            <div class="musicitem">
+
+        <a href="song/usamajombe-aidfest-madness" class="artwork-div"> <img src="artworks/usamajombe-aidfest.jpg" class="artwork" alt="usamajombe-aidfest-madness artwork">
+            <span class="genre-pic">Amapiano</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/usamajombe-aidfest-madness" class="music-link" >Usamajombe</a>
+          <a href="song/usamajombe-aidfest-madness" class="h2">Aidfest Madness</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+
+            
+            <div class="musicitem">
+
+        <a href="song/mitambo-aba-m`bangali" class="artwork-div"> <img src="artworks/mitambo-aba.jpg" class="artwork" alt="mitambo-aba-m`bangali artwork">
+            <span class="genre-pic">Hip-Hop/Rap</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/mitambo-aba-m`bangali" class="music-link" >Mitambo</a>
+          <a href="song/mitambo-aba-m`bangali" class="h2">Aba M`bangali</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+            
+            <div class="musicitem">
+
+        <a href="song/Lyvwa-Katundu" class="artwork-div"> <img src="artworks/Katundu-Lyvwa.jpg" class="artwork" alt="Lyvwa-Katundu artwork">
+            <span class="genre-pic">Fusion</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/Lyvwa-Katundu" class="music-link" >Katundu</a>
+          <a href="song/Lyvwa-Katundu" class="h2">Lyvwa</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+    
+            <div class="musicitem">
+
+        <a href="song/lakwira-rashley" class="artwork-div"> <img src="artworks/lakwira-Rashley.jpg" class="artwork" alt="lakwira-rashley artwork">
+            <span class="genre-pic">RnB</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/lakwira-rashley" class="music-link" >Lakwira</a>
+          <a href="song/lakwira-rashley" class="h2">Rashley</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+
+
+            <div class="musicitem">
+
+        <a href="song/Brainlock-T-kas-Kachasu-ft-crispy-Malawi" class="artwork-div"> <img src="artworks/kachasu-T kas ft cripsy.png" class="artwork" alt="Brainlock-T-kas-Kachasu-ft-crispy-Malawi artwork">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/Brainlock-T-kas-Kachasu-ft-crispy-Malawi" class="music-link" >Kachasu ft Crispy Malawi</a>
+          <a href="song/Brainlock-T-kas-Kachasu-ft-crispy-Malawi" class="h2">Barinlock T Kas</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+            <div class="musicitem">
+
+        <a href="song/combien-Tay-Grin-x-Awilo-Longomba" class="artwork-div"> <img src="artworks/combien-Tay grin.png" class="artwork" alt="combien-Tay-Grin-x-Awilo-Longomba artwork">
+            <span class="genre-pic">Afro-Jazz</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/combien-Tay-Grin-x-Awilo-Longomba" class="music-link" >Combien ft Eddie Kadi</a>
+          <a href="song/combien-Tay-Grin-x-Awilo-Longomba" class="h2">Tay Grin x Awilo Longomba</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+
+
+               <div class="musicitem">
+
+        <a href="song/safety-pop-young" class="artwork-div"> <img src="artworks/safety- pop young.jpg" class="artwork" alt="safety-pop-young">
+            <span class="genre-pic">Afro-Pop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/safety-pop-young" class="music-link" >Safety</a>
+          <a href="song/safety-pop-young" class="h2">Pop Young</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+
+            
+             <div class="musicitem">
+
+        <a href="song/lifulekitala-sife-mw-ft-keturah" class="artwork-div"> <img src="artworks/Sife-Mw-Ft-Keturah---Rifulekital.jpeg" alt="lifulekitala-sife-mw-ft-keturah" class="artwork">
+            <span class="genre-pic">Afro-Pop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/lifulekitala-sife-mw-ft-keturah" class="music-link" >Rifulekitala ft Keturah</a>
+          <a href="song/lifulekitala-sife-mw-ft-keturah" class="h2">Sife Mw</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+        </container> 
+    </div>
+
+
+             <div class="musicitem">
+
+        <a href="song/achina-gattah-ase-ft-dirty-flow-mg1" class="artwork-div"> <img src="12 08 25 music/Achina-Gattah-Ase-MG1-ft-Dirty-Flo.jpg" class="artwork" alt="achina-gattah-ase-ft-dirty-flow-mg1">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/achina-gattah-ase-ft-dirty-flow-mg1" class="music-link" >MG1 ft Dirt Flo</a>
+          <a href="song/achina-gattah-ase-ft-dirty-flow-mg1" class="h2">Achina Gattah Ase</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+            <span class="downloads"><img src="images/trending-black.png" alt="">5372</span>
+        </container> 
+    </div>
+
+
+    <div class="musicitem">
+
+        <a href="song/malesa-blaze-ft-lord-gaga" class="artwork-div"> <img src="artworks/Blaze-Feat-Lord-Malesa.jpeg" class="artwork" alt="malesa-blaze-ft-lord-gaga">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/malesa-blaze-ft-lord-gaga" class="music-link" >Malesa ft Lord Gaga</a>
+          <a href="song/malesa-blaze-ft-lord-gaga" class="h2">Blaze</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">August 2025</span>
+            <span class="downloads"><img src="images/trending-black.png" alt="">5372</span>
+        </container> 
+    </div>
+
+
+
+    
+
+             <div class="musicitem">
+
+        <a href="song/6th-ayi-bad-energy-f-Brainlock-TKas" class="artwork-div"> <img src="artworks/Mfana wa malawi 6th.png" alt="6th-ayi-bad-energy-f-Brainlock-TKas" class="artwork">
+            <span class="genre-pic">Afro-Dancehall</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/6th-ayi-bad-energy-f-Brainlock-TKas" class="music-link" >Ayi bad energy ft Brainlock T Kas</a>
+          <a href="song/6th-ayi-bad-energy-f-Brainlock-TKas" class="h2">6TH MW</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">July 2025</span>
+            <span class="downloads"><img src="images/trending-black.png" alt="">5372</span>
+        </container> 
+    </div>
+
+
+
+
+            <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/one-bottle-vasco-khamuna" class="artwork-div"> <img src="artworks/one bottle-khamuna.jpg" class="artwork" alt="song/one-bottle-vasco-khamuna">
+            <span class="genre-pic">Fusion</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/one-bottle-vasco-khamuna" class="music-link" >One bottle</a>
+          <a href="song/one-bottle-vasco-khamuna" class="h2">Vasco Khamuna</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+            <span class="downloads"><img src="images/trending-black.png" alt="">5372</span>
+        </container> 
+    </div>
+
+
+
+
+            
+             <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/f-tron-money" class="artwork-div"> <img src="artworks/F-Tron_Money (1).jpg" class="artwork" alt="song/f-tron-money">
+            <span class="genre-pic">DanceHall</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/f-tron-money" class="music-link" >Money</a>
+          <a href="song/f-tron-money" class="h2">F Tron</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+            <span class="downloads"><img src="images/trending-black.png" alt="">
+            </span>
+        </container> 
+    </div>
+
+
+
+              <div class="musicitem">
+
+        <a href="song/k-jasper-bwerera" class="artwork-div"> <img src="artworks/bwelera-jasper.jpg" class="artwork" alt="song/k-jasper-bwerera">
+            <span class="genre-pic">Hip-Hop-Drill</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/k-jasper-bwerera" class="music-link" >Bwerera</a>
+          <a href="song/k-jasper-bwerera" class="h2">K Jasper</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/calendar.png" alt="">2024</span>
+            <span class="downloads"><img src="images/trending-black.png" alt="">5372</span>
+        </container> 
+    </div>
+
+
+
+    
+            <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/vasco-khamuna-chaka-china" class="artwork-div"> <img src="artworks/chaka-china-khamuna.jpg" class="artwork" alt="song/vasco-khamuna-chaka-china">
+            <span class="genre-pic">Amapiano</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/vasco-khamuna-chaka-china" class="music-link" >Chaka china x Boi Max</a>
+          <a href="song/vasco-khamuna-chaka-china" class="h2">Vasco Khamuna</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+           
+        </container> 
+    </div>
+
+
+
+
+
+             <div class="musicitem">
+
+        <a href="song/badmind-f-tron" class="artwork-div"> <img src="artworks/Badmind_-_F_Trone_x_Chinp.jpg" class="artwork" alt="song/badmind-f-tron">
+            <span class="genre-pic">Dancehall</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/badmind-f-tron" class="music-link" >Bad mind</a>
+          <a href="song/badmind-f-tron" class="h2">F Tron</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/calendar.png" alt="">2024</span>
+           
+        </container> 
+    </div>
+
+
+
+             <div class="musicitem">
+
+        <a href="song/k-jasper-mamveramvera" class="artwork-div"> <img src="artworks/manveranvera-kjasper.jpg" class="artwork" alt="song/k-jasper-mamveramvera">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/k-jasper-mamveramvera" class="music-link" >Mamveramvera</a>
+          <a href="song/k-jasper-mamveramvera" class="h2">K Jasper</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/calendar.png" alt="">2024</span>
+            
+        </container> 
+    </div>
+
+
+
+    
+              <div class="musicitem">
+
+        <a href="song/chuma-jay-tway" class="artwork-div"> <img src="artworks/Jay_Tway__-_Chuma.jpg" class="artwork">
+            <span class="genre-pic">Afro-Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/chuma-jay-tway" class="music-link" >Chuma</a>
+          <a href="song/chuma-jay-tway" class="h2">Jay Tway</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/calendar.png" alt="">2023</span>
+            
+        </container> 
+    </div>
+
+
+
+
+             <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/k-jasper-masini" class="artwork-div"> <img src="artworks/masin-jasper.jpg" class="artwork" alt="song/k-jasper-masini">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/k-jasper-masini" class="music-link" >Masin</a>
+          <a href="song/k-jasper-masini" class="h2">K Jasper</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+            
+        </container> 
+    </div>
+
+
+             <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/mantha-andy-cee" class="artwork-div"> <img src="artworks/manthaArt-andycee.jpg" class="artwork" alt="song/mantha-andy-cee">
+            <span class="genre-pic">Afro-Dancehall</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/mantha-andy-cee" class="music-link" >Mantha</a>
+          <a href="song/mantha-andy-cee" class="h2">Andy Cee</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+    
+        </container> 
+    </div>
+
+
+
+            <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/mada-andy-cee" class="artwork-div"> <img src="artworks/Phyzix_ft_Andy_C.jpg" class="artwork" alt="song/mada-andy-cee">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/mada-andy-cee" class="music-link" >Mada ft Phyzix</a>
+          <a href="song/mada-andy-cee" class="h2">Andy Cee</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+
+        </container> 
+    </div>
+
+
+
+    
+    <!--music items-->
+    <div class="musicitem">
+
+        <a href="song/jay-tway-yomweyi" class="artwork-div"> <img src="artworks/yomweyi.jpg" class="artwork" alt="song/jay-tway-yomweyi">
+            <span class="genre-pic">Hip-Hop</span><span id="dl-on"><img src="images/download-icon.png" alt=""></span></a>
+       <div>
+          <a href="song/jay-tway-yomweyi" class="music-link" >yomweyi ft Chizmo Njucci x Bee Jay</a>
+          <a href="song/jay-tway-yomweyi" class="h2">Jay Tway</a> 
+        </div>
+
+        <contianer class="blw-item">
+            <span class="post-date"><img src="images/time.png" alt="">2024</span>
+            
+        </container> 
+    </div>
+
+
+    <!--music items-->
+   
+   
+        
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+
+
+
+
+    
+    
+   </section>
+
+
+
+
+   
+
+   <!--footer section for qiuck access-->
+<footer>
+    <a href="#" id="scroll-top"><img src="images/up-icon.png" alt="" class="scroll-top"></a>
+
+
+     <a href="https://wa.me/message/E4RWLUFUOYDDF1" id="wap-link"><img src="images/WhatsApp_Icon.png" alt=""></a>
+
+      <p class="discr">ghettojamz music is one of the fastest growing music streaming platform. 
+        Upload and promote your music with us</p>
+
+        <div class="footer-ul">
+            <h1>qiuck links</h1>
+            <li><a href="contact-us.">About</a></li>
+            <li><a href="contact-us">Contact</a></li>
+        
+        </div>
+
+
+
+        <span class="social-links">
+            <p class="in-tc">SOCIAL MEDIA</p>
+            
+            <span class="links">
+                <a href="https://www.instagram.com/ghettojamz.web?igsh=MW9vcGprOGJzaGh2dA=="><img src="images/instagram-white.png" alt="" ></a>
+                <a href="https://www.facebook.com/profile.php?id=61568438631481"><img src="images/Facebook-white.png" alt="" ></a>
+                <a href="https://www.youtube.com/channel/UCT_JbcJwvkLSqPtJqBRIqQw"><img src="images/videos.png" alt="" ></a>
+            </span>
+            
+        </span>
+        
+    
+        
+        <p id="main-footer">©GhettoJamz2025. All Rights Reserved</p>
+        <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21379292&style=0024&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
+                                    
+        
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21379297&style=0021&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
+                                    
+     
+
+                                          
+    
+</footer>
+</body>
+</html>
